@@ -123,7 +123,7 @@ export const Home = () => {
         <div className="cardsServicesWrap">
           <div className="cardsServicesContainer" >
             <div className="titleServices">
-              <h1>MATERIAIS<br></br> <strong>EDUCATIVOS</strong></h1>
+              <h1>APRENDE<br></br> <strong>CON NÓS</strong></h1>
             </div>
             <div className="cards" >
               <article className="cardServices db pr">
@@ -230,7 +230,7 @@ export const Home = () => {
         <div className="cardsArticlesWrap">   
           <div className="cardsArticlesContainer">
             <div className="titleArticles">
-              <h1>O QUE NON<br></br> TE ENSINARON NA ESCOLA</h1>
+              <h1>AQUELO<br></br> QUE NON TE ENSINARON</h1>
             </div>
             <div className="articles">
               <article className="cardArticles db pr" id="article1">

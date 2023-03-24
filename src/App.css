@@ -442,12 +442,13 @@ body {
 
 
 .cardsServicesContainer{
+  padding-top: 50px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #2d6a4f;
+  background-color: #000000;
 }
 
 .titleServices {
@@ -475,7 +476,7 @@ body {
   text-align: center;
   padding: 10px;
   margin: 0;
-  flex: 0 0 25%;
+  flex: 0 0 20%;
   max-width: 25%;
   width: 100%;
   border: 0;
@@ -490,7 +491,7 @@ body {
 }
 .linkIconServices {
   /* margin-bottom: 15px; */
-  padding: 30%;
+  padding: 20%;
   display: flex;
   color: #ffb703;
   font-weight: 500;
@@ -733,11 +734,13 @@ a:hover i {
 /*KNOWLEDGEArticles*/
 
 .cardsArticlesContainer{
+  padding-top: 50px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  background-color: #2d6a4f;
 }
 
 .titleArticles{
@@ -745,7 +748,7 @@ a:hover i {
   flex-direction: column;
   line-height: 1.1;
   font-size: 30px;
-  color: black;
+  color: #ffff;
   text-align: center;
 }
 .articles {
@@ -757,18 +760,20 @@ a:hover i {
   margin-left: -7.5px;
   align-items: baseline;
   justify-content: center;
+  
 }
 .cardArticles {
   text-align: center;
   padding: 10px;
   margin: 0;
-  flex: 0 0 25%;
+  flex: 0 0 20%;
   max-width: 25%; 
   width: 100%;
   border: 0;;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+
   }
 
 .linkImgArticle{
@@ -792,7 +797,7 @@ a:hover i {
   padding: 12px 15px;
   text-align: center;
   appearance: none;
-  background-color: #EE531D !important;
+  background-color: #c77dff !important;
   font-size: 14px;
   text-transform: uppercase !important;
   line-height: 1.4;
@@ -808,12 +813,14 @@ a:hover i {
   margin-bottom: 25px;
   margin-top: -25px!important;
   text-align: center;
+  color: #ffff;
+  
 }
 
 .articleSummary {
   margin-bottom: 40px;
   margin-top: 20px;
-  background-color: #ffb703;
+
   display: block;
   word-break: break-word;
   text-align: center;
