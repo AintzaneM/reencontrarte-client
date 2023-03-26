@@ -1,15 +1,11 @@
 import React, { Component } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SearchIcon from '@mui/icons-material/Search';
-import PersonIcon from '@mui/icons-material/Person';
-import InterestsIcon from '@mui/icons-material/Interests';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
-import MenuBookIcon from '@mui/icons-material/MenuBook';
-import ExtensionIcon from '@mui/icons-material/Extension';
-import SmartToyIcon from '@mui/icons-material/SmartToy';
+
 import Slider from "react-slick";
+import Header from "../Header";
+import Footer from "../Footer";
+import ServiceDropdown from "../ServiceDropdown";
 
 export const Home = () => {
   const settings = {
@@ -57,42 +53,30 @@ export const Home = () => {
   return (
     <>
       { /**Header */}
+      <Header></Header>
 
       
-      <div className='header1'>
-
-        <span><FavoriteIcon />a arte de coidarte</span>
-      </div>
-             
-        <nav class="navBar">
-        <input id="menuToggle" type="checkbox" />
-        <label class='menuButtonContainer' for="menuToggle">
-            <div class='menuButton'></div>
-        </label>
-        
-        <p>LOGO HERE</p>
-        
-        <ul class="menu">
-          <li><a href="#">NÓS</a></li>
-          <li><a href="#"><InterestsIcon /></a></li>
-          <li><a href="#"><SearchIcon /></a></li>
-          <li><a href="#"><PersonIcon /></a></li>
-
-        </ul>
-      </nav>
-      
+   
       { /**Body */}
       <div className='body'>
-        <div className="presentation">
-          <img src="./img/4.png" ></img>
-          <div className="textAndButton">
-          <h1>A saúde mental debe ser un dereito universal, non un privilexio.</h1><br></br>
-          <p>Coa educación e a innovación como eixes, facilitamos recursos e materiais artístico-dixitais para a <strong>comunidade.</strong> 
-          <br></br>
-          Sexas quen sexas: curiosx, amigx, familiar ou profesional, mergúllate neste espazo seguro
-          para <strong>ser, preguntar, aprender, desprogramar...</strong></p>
-          <a>Coñécenos!</a> 
+        <div className="presentationWrap">
+          <div className="presentationContainer container">
+          <div className="presentation row ">
+            <img src="./img/4.png" ></img>
+            <div className="textAndButton container">
+            <h1>A saúde mental debe ser un dereito universal, non un privilexio.</h1><br></br>
+            <p>Coa educación e a innovación como eixes, facilitamos recursos e materiais artístico-dixitais para a <strong>comunidade.</strong> 
+            <br></br>
+            Sexas quen sexas: curiosx, amigx, familiar ou profesional, mergúllate neste espazo seguro
+            para <strong>ser, preguntar, aprender, desprogramar...</strong></p>
+            <a>Coñécenos!</a> 
+          </div>
+
         </div>
+        
+
+        </div>
+        
       </div>
 
         { /**slider
@@ -118,72 +102,44 @@ export const Home = () => {
           </div>
         </Slider>
  */}
-        { /**education resources */}
-
-        <div className="cardsServicesWrap">
-          <div className="cardsServicesContainer" >
-            <div className="titleServices">
-              <h1>APRENDE<br></br> <strong>CON NÓS</strong></h1>
-            </div>
-            <div className="cards" >
-              <article className="cardServices db pr">
-                <a href="#" className="linkIconServices oh db pr linkGeneral iconHover pop-on-hover ">
-                  
-                  <div className="iconService db ">
-                    <i></i>
-                    <VideoLibraryIcon className="cardIcon" />
-                  </div>
-                </a>
-                <div className="infoServices db">
-                  <h4>DIXITAL</h4>
-                  <div className="serviceSummary">Creacións audiovisuais propias jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</div>
-                </div>
-              </article>
-
-              <article className="cardServices db pr">
-                <a href="#" className="linkIconServices oh db pr linkGeneral iconHover pop-on-hover ">
-                  
-                  <div className="iconService db">
-                    <i></i>
-                    <MenuBookIcon className="cardIcon" />
-                  </div>
-                </a>
-                <div className="infoServices db">
-                  <h4>GUIAS</h4>
-                  <div className="serviceSummary"> Acordos de bo trato para a resolución de conflitos na aula, na familia, nas relacións, no traballo.  Caderno de Autocoñecemento para situacións de crise</div>
-                </div>
-              </article>
-              <article className="cardServices db pr">
-                <a href="#" className="linkIconServices oh db pr linkGeneral iconHover pop-on-hover ">
-                  
-                  <div className="iconService db">
-                    <i ></i>
-                    <ExtensionIcon className="cardIcon" />
-                  </div>
-                </a>
-                <div className="infoServices db">
-                  <h4>RECURSOS</h4>
-                  <div className="serviceSummary"> Recursos dixitais disponibles para calquera persoa interesada</div>
-                </div>
-              </article>
-
-              <article className="cardServices db pr">
-                <a href="#" className="linkIconServices oh db pr linkGeneral iconHover pop-on-hover ">
-                  <div className="iconService db">
-                    <i ></i>
-                    <SmartToyIcon className="cardIcon"/>
-                  </div>
-                </a>
-                <div className="infoServices db">
-                  <h4>XOGOS</h4>
-                  <div className="serviceSummary"> Unha habitación propia (Mulleres na historia. Investigación) Fakenews (Concurso) Loita polos Dereitos Civís Escrita creativa</div>
-                </div>
-              </article>
       
-            </div>
-          </div>
-        </div>
+        
+        { /**SERVICES */}
+        
+          
+             <ServiceDropdown></ServiceDropdown>
+      
+            
+          
+        
+  {/*CALL TO ACTION*/}
 
+  <div className="actionWrap">
+          <div className="actionContainer container">
+            <div className="action row textCenter ">
+              <div className="infoAction1 ">
+               <h4> NON SABES O QUE ELEXIR?</h4>
+               <p>Descubreo completando as seguintes preguntas</p>
+               <div className="btnAction1 ">
+                <a href="#" className="linkAction1 linkGeneral">XOGAR Ó QUIZ </a>
+              </div>
+              </div>
+              
+
+              <div className="infoAction2">
+               <h4> PORQUÉ SORXE O PROXECTO?</h4>
+               <p>Coñécenos un pouco máis</p>
+               <div className="btnAction2">
+                <a href="#" className="linkAction2 linkGeneral">MÁIS INFORMACIÓN</a>
+              </div>
+              </div>
+              
+
+            </div>
+
+          </div>
+
+        </div>
         { /**projects */}
 
         <div className="projectsGalleryWrap">
@@ -228,11 +184,11 @@ export const Home = () => {
 
         { /**knowledge articles */}
         <div className="cardsArticlesWrap">   
-          <div className="cardsArticlesContainer">
+          <div className="cardsArticlesContainer container">
             <div className="titleArticles">
               <h1>AQUELO<br></br> QUE NON TE ENSINARON</h1>
             </div>
-            <div className="articles">
+            <div className="articles row">
               <article className="cardArticles db pr" id="article1">
                 <a href="#" className="linkImgArticle oh db pr linkGeneral">
                   <div className="imgArticle">
@@ -299,12 +255,7 @@ export const Home = () => {
         </div>
 
         { /**footer*/}
-      <div className="footer" >
-
-      </div>
-      
-
-
+        <Footer></Footer>
 
       </div>
 
